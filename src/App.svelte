@@ -1,7 +1,7 @@
 <script>
   import Counter from './lib/Counter.svelte'
   import Masik from './lib/Masik.svelte'
-  var selected = 'Counter'
+  var selected = 'mv'
 </script>
 
 <main>
