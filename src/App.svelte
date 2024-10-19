@@ -2,6 +2,7 @@
   import Counter from './lib/Counter.svelte'
   import Masik from './lib/Masik.svelte'
   var selected = 'mv'
+  var x = 0
 </script>
 
 <main>
@@ -11,9 +12,9 @@
   </div>
   <div>
     {#if selected === 'mv'}
-      <Masik />
+      <Masik y={x}/>
     {:else if selected === 'Counter'}
-      <Counter />
+      <Counter bind:count={x} />
     {/if}
   </div>
 </main>
